@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "service-bus-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/serviceBus/ServiceBusWebPart.js",
+          "manifest": "./src/webparts/serviceBus/ServiceBusWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ServiceBusWebPartStrings": "lib/webparts/serviceBus/loc/{locale}.js"
+  }
+}

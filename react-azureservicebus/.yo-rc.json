@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.4",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "react-azureservicebus",
+    "libraryId": "36a4811a-4c82-44c2-a375-c647827434f2",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "react-azureservicebus",
+    "solutionShortDescription": "react-azureservicebus description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

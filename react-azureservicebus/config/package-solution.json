@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-azureservicebus-client-side-solution",
+    "id": "36a4811a-4c82-44c2-a375-c647827434f2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "react-azureservicebus description"
+      },
+      "longDescription": {
+        "default": "react-azureservicebus description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "react-azureservicebus Feature",
+        "description": "The feature that activates elements of the react-azureservicebus solution.",
+        "id": "1f0c4e25-4cac-49d6-a3fa-f93169555cf3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/react-azureservicebus.sppkg"
+  }
+}
