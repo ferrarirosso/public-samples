@@ -6,6 +6,9 @@ This sample demonstrate how to use the `Azure Service Bus` directly from SPFx.
 You can read and write messages using this sample.
 ![Demo](./assets/send_and_receive_from_bus.gif)
 
+## Blog post
+You can find additional informations about this sample in my blog post [SPFx to Azure Service Bus](https://www.puntobello.ch/en/nello/spfx_to_azure_service_bus)
+
 
 ## Compatibility
 ![SPFx 1.20](https://img.shields.io/badge/SPFx-1.20.0-green.svg)
