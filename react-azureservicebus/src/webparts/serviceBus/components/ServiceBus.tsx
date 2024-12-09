@@ -35,7 +35,14 @@ const ServiceBus: React.FC<{}> = () => {
     try {
       const serviceBusClient = new ServiceBusClient(endpoint);
       const sender = serviceBusClient.createSender(queueName);
-      await sender.sendMessages({ body: payload });
+      const messageContent = JSON.parse(payload); // Convert the payload string to a JSON object
+      const message = {
+        body: {
+          ContentType: "application/json",
+        },
+        applicationProperties: messageContent
+      };
+      await sender.sendMessages(message);
       setStatusMessage(`${formatTimestamp(new Date())}: Message sent successfully`);
     } catch (error) {
       setStatusMessage(`${formatTimestamp(new Date())}: Error sending message: ${error.message}`);
@@ -43,7 +50,6 @@ const ServiceBus: React.FC<{}> = () => {
       setIsLoading(false);
     }
   };
-
   const setupReceiver = async (): Promise<void> => {
     setIsLoading(true);
     try {
