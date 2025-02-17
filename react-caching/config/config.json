@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "caching-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/caching/CachingWebPart.js",
+          "manifest": "./src/webparts/caching/CachingWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CachingWebPartStrings": "lib/webparts/caching/loc/{locale}.js"
+  }
+}
