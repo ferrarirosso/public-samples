@@ -45,7 +45,7 @@ const ServiceBus: React.FC<{}> = () => {
       await sender.sendMessages(message);
       setStatusMessage(`${formatTimestamp(new Date())}: Message sent successfully`);
     } catch (error) {
-      setStatusMessage(`${formatTimestamp(new Date())}: Error sending message: ${error.message}`);
+      setStatusMessage(`${formatTimestamp(new Date())}: Error sending message: ${(error as Error).message}`);
     } finally {
       setIsLoading(false);
     }
@@ -61,7 +61,7 @@ const ServiceBus: React.FC<{}> = () => {
       setReceiver(receiver);
       setStatusMessage(`${formatTimestamp(new Date())}: Receiver created successfully`);
     } catch (error) {
-      setStatusMessage(`${formatTimestamp(new Date())}: Error setting up receiver: ${error.message}`);
+      setStatusMessage(`${formatTimestamp(new Date())}: Error setting up receiver: ${(error as Error).message}`);
     } finally {
       setIsLoading(false);
     }
@@ -81,7 +81,7 @@ const ServiceBus: React.FC<{}> = () => {
       })));
       setStatusMessage(`${formatTimestamp(new Date())}: Messages received successfully`);
     } catch (error) {
-      setStatusMessage(`${formatTimestamp(new Date())}: Error receiving messages: ${error.message}`);
+      setStatusMessage(`${formatTimestamp(new Date())}: Error receiving messages: ${(error as Error).message}`);
     } finally {
       setIsLoading(false);
     }

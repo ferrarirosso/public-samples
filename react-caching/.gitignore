@@ -1,4 +1,4 @@
-# Logs
+jest-output
 logs
 *.log
 npm-debug.log*
@@ -32,3 +32,10 @@ obj
 
 # Styles Generated Code
 *.scss.ts
+
+# Heft CommonJS build output
+lib-commonjs
+
+# Pantoum upgrade artifacts
+pantoum_run_*
+pantoum_history
